@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 80px;
+    width: 643px;
+  }
+  .container {
+    margin-top: 37px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+
+    
+  }
+}

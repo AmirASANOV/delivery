@@ -1,0 +1,172 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .text {
+      width: 100%;
+      max-width: 312px;
+      color: white;
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .dots {
+      margin-top: 26px;
+      margin-bottom: 37px;
+      height: 184px;
+      position: relative;
+      left: -50px;
+    }
+
+    .communication {
+      color: white;
+      font-size: 25px;
+      cursor: pointer;
+
+      &:last-child {
+        font-size: 18px;
+        text-decoration: underline;
+      }
+    }
+
+    .previewFood {
+      margin-top: 284px;
+
+      .previewFoodName {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+      }
+      .previewFoodBgWeight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+
+        .previewFoodWeight {
+          position: absolute;
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          color: white;
+          margin-top: 5px;
+        }
+      }
+
+      .previewFoodContainer {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .btnBuy {
+          background-image: url(/images/svg/btnBuy.svg);
+          background-position: center;
+          background-size: cover;
+          width: 42px;
+          height: 42px;
+          border: none;
+        }
+
+        .previewFoodPrice {
+          color: white;
+          font-size: 23px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          margin-right: 36px;
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    height: 680px;
+
+    .photo {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .redGroup {
+      background-image: url(/images/svg/redBg.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+      max-width: 355px;
+      height: 357px;
+      padding-left: 56px;
+      padding-top: 37px;
+      position: absolute;
+      bottom: -150px;
+      margin-left: 72px;
+
+      .previewText {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 25px;
+        }
+        .weight {
+          width: 47px;
+          height: 20px;
+          background-color: rgba(255, 255, 255, 0.3);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          border-radius: 3px;
+        }
+        .description {
+          width: 100%;
+          max-width: 231px;
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.7);
+        }
+        .containerPrice {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .price {
+            font-family: "Montserrat", sans-serif;
+            font-size: 23px;
+          }
+          .btnBuy {
+            background-image: url(../../images/svg/btnBuy.svg);
+            background-position: center;
+            background-size: cover;
+            border: none;
+            width: 42px;
+            height: 42px;
+            margin-left: 18px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .dotsSec {
+      height: 364px;
+      position: absolute;
+      z-index: 0;
+      right: -80px;
+      bottom: -300px;
+    }
+  }
+}

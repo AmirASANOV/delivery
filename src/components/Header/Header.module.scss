@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 52px;
+  padding-bottom: 44px;
+
+
+  .link {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    height: 30px;
+    width: 169px;
+  }
+
+  .links {
+    width: 100%;
+    max-width: 706px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    .list {
+    list-style-type: none;
+    }
+  }
+  .nav {
+    cursor: pointer;
+    width: 27px;
+    height: 25px;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

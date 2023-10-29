@@ -1,0 +1,65 @@
+.cardFood {
+  position: relative;
+  width: 100%;
+  max-width: 233px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 447px;
+
+  .cardName {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  .bgWeight {
+    width: 47px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .weight {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+    }
+  }
+  .description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .cardPrice {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    .prevPriceContainer {
+      .prevPrice {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: line-through;
+        font-size: 18px;
+      }
+    }
+
+    .currentPrice {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 23px;
+      font-weight: 800;
+      margin-right: 35px;
+    }
+    .btnBuy {
+      width: 42px;
+      height: 42px;
+      background-image: url(/images/svg/btnBuy.svg);
+      background-size: cover;
+    }
+  }
+}
