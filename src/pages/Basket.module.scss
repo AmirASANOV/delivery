@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    color: white;
+  }
+  .path {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    color: white;
+    .spanText {
+      color: #9ea2aa;
+    }
+  }
+
+  .template {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+
+    .templImage {
+      width: 180px;
+    }
+    .food {
+      width: 100%;
+      max-width: 360px;
+      font-family: "Montserrat", sans-serif;
+      color: #9ea2aa;
+      font-size: 13px;
+    }
+    .price {
+      width: 69px;
+      font-family: "Montserrat", sans-serif;
+      color: #9ea2aa;
+      font-size: 13px;
+    }
+    .tamplRem {
+      width: 100px;
+    }
+  }
+}

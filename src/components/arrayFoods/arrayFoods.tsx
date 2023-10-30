@@ -1,7 +1,6 @@
 export let foodsArr = [
   {
     URL: "/foods/HachapuriPoAdzharski.png",
-
     name: "Хачапури по-аджарски",
     weight: 430,
     description:
@@ -9,6 +8,7 @@ export let foodsArr = [
     prevPrice: null,
     currentPrice: 470,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -19,6 +19,7 @@ export let foodsArr = [
     prevPrice: 620,
     currentPrice: 495,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -29,6 +30,7 @@ export let foodsArr = [
     prevPrice: 650,
     currentPrice: 520,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -40,6 +42,7 @@ export let foodsArr = [
     prevPrice: 1435,
     currentPrice: 1148,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -51,6 +54,7 @@ export let foodsArr = [
     prevPrice: null,
     currentPrice: 490,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -62,6 +66,7 @@ export let foodsArr = [
     prevPrice: 410,
     currentPrice: 430,
     countKind: 3,
+    typeFood: "hot",
   },
 
   {
@@ -72,6 +77,7 @@ export let foodsArr = [
     prevPrice: 620,
     currentPrice: 400,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -82,6 +88,7 @@ export let foodsArr = [
     prevPrice: null,
     currentPrice: 120,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -92,6 +99,7 @@ export let foodsArr = [
     prevPrice: null,
     currentPrice: 470,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -102,6 +110,7 @@ export let foodsArr = [
     prevPrice: 410,
     currentPrice: 430,
     countKind: 3,
+    typeFood: null,
   },
 
   {
@@ -112,6 +121,7 @@ export let foodsArr = [
     prevPrice: 650,
     currentPrice: 520,
     countKind: null,
+    typeFood: null,
   },
 
   {
@@ -123,5 +133,71 @@ export let foodsArr = [
     prevPrice: 1435,
     currentPrice: 1148,
     countKind: null,
+    typeFood: null,
   },
+  {
+    URL: "/foods/odzhahuriIzTelyatini.png",
+    name: "Оджахури из телятины",
+    weight: 430,
+    description:
+      "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+    prevPrice: null,
+    currentPrice: 490,
+    countKind: null,
+    typeFood: "hot",
+  },
+  {
+    URL: "/foods/dolma.png",
+    name: "Долма",
+    weight: 350,
+    description:
+      "Невероятно ароматная начинка из рубленого мяса и свежей зелени, завернутая в виноградные листья",
+    prevPrice: null,
+    currentPrice: 410,
+    countKind: null,
+    typeFood: "hot",
+  },
+  {
+    URL: "/foods/chihohbili.png",
+    name: "Чихохбили",
+    weight: 350,
+    description:
+      "Невероятно ароматная начинка из рубленого мяса и свежей зелени, завернутая в виноградные листья",
+    prevPrice: null,
+    currentPrice: 490,
+    countKind: null,
+    typeFood: "hot",
+  },
+  {
+    URL: "/foods/lobioPoImeritinski.png",
+    name: "Лобио по Имеритински",
+    weight: 430,
+    description:
+      "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+    prevPrice: null,
+    currentPrice: 490,
+    countKind: null,
+    typeFood: "hot",
+  },
+  {
+    URL: "/foods/stakeIzLososyaSOvoshami.png",
+    name: "Стейк из Лососья с овощами",
+    weight: 430,
+    description:
+      "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+    prevPrice: null,
+    currentPrice: 1200,
+    countKind: null,
+    typeFood: "hot",
+  },
+
+  //   {
+  //   URL: '',
+  //     name:'',
+  //     weight: ,
+  //     description: '',
+  //     prevPrice : null,
+  //     currentPrice: ,
+  //     typeFood: 'hot'
+  // }
 ];

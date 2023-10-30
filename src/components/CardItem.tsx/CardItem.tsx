@@ -9,6 +9,7 @@ interface ICardItem {
   prevPrice: number | null;
   currentPrice: number;
   countKind: null | number;
+  typeFood: null | string;
   onClick: (event: React.MouseEvent<HTMLElement>) => void;
 }
 

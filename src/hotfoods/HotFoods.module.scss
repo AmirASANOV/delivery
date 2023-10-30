@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 80px;
+  }
+
+  .path {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 13px;
+    .spanText {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    .select {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 20px 0px 20px 0px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+  }
+}

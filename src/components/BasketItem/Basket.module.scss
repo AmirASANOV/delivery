@@ -1,0 +1,50 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  height: 180px;
+  background-color: black;
+
+  .image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .food {
+    width: 100%;
+    max-width: 360px;
+    .itemName {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+    }
+
+    .bgWeight {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39px;
+      height: 20px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.3);
+      .weight {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        color: white;
+      }
+    }
+  }
+
+  .price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    color: white;
+  }
+
+  .remBtn {
+    width: 100px;
+    height: 100px;
+  }
+}

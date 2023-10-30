@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import s from "./Header.module.scss";
+import { Link } from "react-router-dom";
 
 import Logo from "../../images/svg/midasLogo.svg";
 
@@ -10,7 +11,7 @@ import Profile from "../../images/svg/Profile.svg";
 const Header = () => {
   const [links, setLinks] = useState([
     { name: "Акции", link: "#" },
-    { name: "Горячее", link: "#" },
+    { name: "Горячее", link: "/hotFoods" },
     { name: "Холодное", link: "#" },
     { name: "Свежая выпечка", link: "#" },
     { name: "Десерты", link: "#" },
@@ -18,33 +19,31 @@ const Header = () => {
   ]);
 
   const [navs, setNavs] = useState([
-    { icon: Search, link: "#" },
-    { icon: Basket, link: "#" },
-    { icon: Profile, link: "#" },
+    { icon: Search, link: "/" },
+    { icon: Basket, link: "/basket" },
+    { icon: Profile, link: "/" },
   ]);
 
   return (
     <div className={s.wrapper}>
-      <img src={Logo} alt="logo" />
+      <Link to="/">
+        <img src={Logo} alt="logo" />
+      </Link>
       <div className={s.links}>
         {links.map((item, index) => (
           <li className={s.list} key={index}>
-            <a className={s.link} href={item.link}>
+            <Link className={s.link} to={item.link}>
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </div>
 
       <div className={s.navs}>
         {navs.map((nav, index) => (
-          <img
-            className={s.nav}
-            key={index}
-            src={nav.icon}
-            href={nav.link}
-            alt="icon"
-          />
+          <Link className={s.nav} key={index} to={nav.link}>
+            <img src={nav.icon} alt="icon" />
+          </Link>
         ))}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Preview.module.scss";
-import BG from "../../images/bg.png";
+
 import STAKE from "../../images/stake.jpg";
 import DOTS from "../../images/svg/dots.svg";
 import DOTSSEC from "../../images/svg/dotsSec.svg";
@@ -10,7 +10,6 @@ const Preview: React.FC = () => {
   let communications = ["+7 (499) 841-67-29", "delivery@midas.rest"];
   return (
     <div className={s.wrapper}>
-      <img className={s.bg} src={BG} alt="bg" />
       <div className={s.description}>
         <p className={s.text}>Доставка готовой еды из фермерских продуктов!</p>
         <img className={s.dots} src={DOTS} alt="dots" />
@@ -52,11 +51,7 @@ const Preview: React.FC = () => {
             </div>
           </div>
         </div>
-        <img
-          className={s.dotsSec}
-          src={DOTSSEC}
-          alt="dotsSec"
-        />
+        <img className={s.dotsSec} src={DOTSSEC} alt="dotsSec" />
       </div>
     </div>
   );
